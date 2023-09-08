@@ -7,7 +7,7 @@ function [alldata, Fs, dnum1, dnum2] = readTSLemiBin(cfile, cpath, ConvFactors)
 % see: Zhang et al., 2020 for details of the LEMI data format (in Chinese)
 % doi:10.11720/wtyht.2020.1485
 % 
-% DONG Hao, 2023, in Nyingchi
+% DONG Hao, in Nyingchi
 % 
 % cfile:       binary data files (can be a cell with multiple files)
 % cpath:       path to the file
