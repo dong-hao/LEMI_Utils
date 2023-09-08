@@ -11,6 +11,8 @@ A Ukraine Long-period magnetotellurics system, which was quite popular in China.
 
 ## DATA FORMAT
 
+Note that, unfortunately, LEMI-417 only conserves two digits float in their binary files (i.e. the resolution is 0.01 mV/km for E and 0.01 nT for B). This may lead to some precision loss from the equipment level. Not sure if their newer equipment will do better on that part. 
+
 for a detailed description of the file format, see: Zhang et al., 2020 for further information (in Chinese)
 
 ZHANG Wei, HU Lei, ZHANG Zhao-Bo. Raw data format analysis of LEMI-417 earth deep electromagnetic field observation system. Geophysical and Geochemical Exploration, 2020, (4): 810-815. [doi:10.11720/wtyht.2020.1485]
@@ -31,7 +33,7 @@ git clone https://github.com/dong-hao/LEMI_Utils/ your_local_folder
 ```
 
 ## UNITS
-Note that the internal unit for electrical field is mV, while the  here is log10(Ohmm) - instead of linear scale for both resistivity and apparent resistivity. The layer depth is in (linear) metres, while the impedance phase is in rads. 
+Note that the internal unit for electrical field is mV/km, while the unit for the magnetic field is nT.  
 
 ## HOW TO GET UPDATED
 ```
